@@ -10,15 +10,15 @@ subtitle: Preprints, publications, and presentations.
 
 - **Bartlett, J. E.** (2024, October 29). Using Open Data to Create Applied Statistics Assessments on Reproducibility and Replicability. Pre-print and supporting materials available on [PsyArXiv](https://osf.io/preprints/osf/nce4y).
 
-### 2023
-
-- Stevenson, J. L., Mavromati, K., **Bartlett, J. E.**, Morrow, L., Moxey, L., & Dawydiak, E. J. (2023, August 31). Exploring writer vs content focused reference in written student feedback: mixed evidence from quantitative and content analysis results. Pre-print, data, and code available on [PsyArXiv](https://psyarxiv.com/wbme7/).
-
 ### 2021
 
 - Palmer, C. & **Bartlett, J. E.** (2021, June 6). Does religiosity inhibit the proclivity to self-forgive?. Pre-print, data, and code available on [PsyArXiv](https://psyarxiv.com/eca5j).
 
 ## Publications
+
+### 2025
+
+- Stevenson, J. L., Mavromati, K., **Bartlett, J. E.**, Morrow, L., Moxey, L., & Dawydiak, E. J. (2025). Exploring content vs writer focus in written student feedback: Perceived impact on student emotional response, attention, and usefulness. *[Open Scholarship of Teaching and Learning](https://osotl.org/index.php/osotl/article/view/130), 4*(1). Available open access via the journal. Data and code available on the [OSF](https://osf.io/v8gdx/).
 
 ### 2024
 
