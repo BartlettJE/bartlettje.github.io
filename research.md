@@ -6,9 +6,11 @@ subtitle: Preprints, publications, and presentations.
 
 ## Pre-prints
 
-### 2024
+### 2025
 
-- **Bartlett, J. E.** (2024, October 29). Using Open Data to Create Applied Statistics Assessments on Reproducibility and Replicability. Pre-print and supporting materials available on [PsyArXiv](https://osf.io/preprints/osf/nce4y).
+- **Bartlett, J. E.**, Mahrholz, G., & Nordmann, E. (2025, April 21). Practice what you preach: Designing student assignments that advance open and reproducible science. Pre-print available on [PsyArXiv](https://doi.org/10.31219/osf.io/jb72d_v1).
+
+- **Bartlett, J. E.** (2025, April 2). Using Open Data to Create Applied Statistics Assessments on Reproducibility and Replicability. Pre-print and supporting materials available on [PsyArXiv](https://osf.io/preprints/osf/nce4y_v2).
 
 ### 2021
 
