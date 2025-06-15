@@ -1,0 +1,291 @@
+---
+title: "Emptying the file drawer: attentional bias in dependent and non-dependent smokers"
+author: ""
+date: ""
+output: html_document
+---
+### Introduction 
+At my current career stage, my file drawer is not very big. However, it is a waste of everyone's time if there is data lying around that no one has ever had the chance to see or use. This post outlines my undergraduate third year project (for more information on the background and methodology, the full thesis can be found on [ResearchGate](https://www.researchgate.net/publication/296623691_The_Difference_in_Smoking_Motives_Habits_and_Attentional_Bias_in_Nicotine_Dependent_and_Non-Dependent_Smokers)) on attentional bias. It is not the most particularly informative experiment due to the small groups sizes, and unless it is included in a meta-analysis it is probably never going to be published. Although the information is available in my thesis, I thought it would be useful to present all the information you would need to perform either a meta-analysis or a power analysis (and it gave me a good excuse to play around with R Markdown). I will start off with a brief explanation of what the study was about, then present the results in three stages: smoking characteristics, attentional bias, and then smoking motives. 
+
+The study investigated attentional bias in dependent and non-dependent smokers. Attentional bias is the tendency to fixate attention on drug related cues such as cigarettes, ashtrays, or packaging. Therefore, if you were to present two images side by side, one featuring a drug related image and the other featuring a non-drug related image, attentional bias would be indicated by looking at the drug related image more than the non-drug related image. There are several studies showing that smokers show greater attentional bias towards smoking related cues than non-smokers (I won't provide references for ease of reading. If you have taken an interest, read the introduction to my thesis for all the background). However, when you start to explore the heterogeneity of smokers, the literature is less consistent. Some research has found light or non-dependent smokers show greater attentional bias towards smoking cues, whilst other research has found heavy or dependent smokers show greater attentional bias towards smoking cues (for more information on the differences between smoking groups, see this relatively short [blog post](http://blog.efpsa.org/2016/09/02/do-smokers-consist-of-a-single-group/)). The aim of this study was to further investigate whether light or heavy smokers exhibit greater attentional bias. 
+
+A dot probe task was used which presents two images side by side, one contains a smoking image and the other contains a neutral image. A small dot probe replaces one of the images and the participant has to indicate which side of the screen the dot appeared on. Attentional bias is indicated by faster responses to dots replacing the smoking images in comparison to dots replacing the neutral images. In addition, the images were presented for three different durations (also known as the stimulus onset asynchrony or SOA) of 200ms, 500ms, and 2000ms. Therefore, the design of the study for the main research question was a 3 x 3 mixed design. There was one between-subject factor of smoking group containing light smokers, heavy smokers, and a non-smoking control group. In addition, there was one within-subject factor of SOA for images presented for 200ms, 500ms, and 2000ms. 
+
+### Packages and data 
+```{r, warning=FALSE, message=FALSE}
+library(tidyverse)
+library(knitr)
+library(ez)
+
+#Main data file.
+data<- read.csv("Dissertation_data.csv", header = TRUE, stringsAsFactors = FALSE)
+
+#Select data including only smokers. 
+smoking.data <- data %>% 
+  filter(SorNS == "Smoker")
+
+#Data for WISDM analyses, selecting only smokers and the WISDM sub-scales
+wisdm.data <- data %>% 
+  filter(SorNS == "Smoker") %>%
+  select(P_N, FTNDDepend, W_afat:W_weightcon)
+
+#Plotting variables
+Pal.2 <- c("#E69F00", "#56B4E9") #colourblind friendly colour palette 
+Pal.3 <- c("#E69F00", "#56B4E9", "#009E73")
+text.size <- 14
+```
+
+### Smoking habits
+
+The first part of the results includes the variables relating to smoking habits. Similar to previous research in the area, non-dependent smokers were defined by scoring 2 or less on the Fagerström Test For Cigarette Dependence (FTCD), and heavy smokers were defined by scoring 3 or more. The following variables are the mean and SD for each smoking related variable broken down by smoking group. 
+
+```{r, echo=FALSE}
+habits <- smoking.data %>%
+  select(FTNDDepend, Age, Smoking_years, Cigarettes_day, FTND, Duration_LastCig, CO_ppm) %>% 
+  gather(Variable, Value, -FTNDDepend) %>%
+  group_by(FTNDDepend, Variable) %>%
+  summarise(Mean = mean(Value),
+            SD = sd(Value),
+            N = n())
+
+habits$Variable <- plyr::revalue(habits$Variable, #revalue the group names by adding a new column 
+                                      c("Age" = "Age (years)", #have the collection in a c()
+                                        "Smoking_years" = "Years as smoker", 
+                                        "Cigarettes_day" = "Cigarette per day",
+                                        "FTND" = "FTND",
+                                        "Duration_LastCig" = "Minutes since last cigarette",
+                                        "CO_ppm" = "CO (ppm)"))
+
+kable(habits, digits = 2,
+      col.names = c("Smoking group", "Smoking charactertic", "Mean", "SD", "N"),
+      caption = "Table 1: Smoking characteristics broken down by smoking group. Abbreviations: FTND; Fagerström Test For Nicotine Dependence, CO; Carbon Monoxide.")
+```
+
+An important point to note here is that there are many other ways of defining dependent and non-dependent smokers other than the FTCD, and there are other key smoking measures such as the number of cigarettes smoked per day and the exhaled concentration of CO. These variables are included in the table, but we can take a closer look at their distribution to see how the groups differ.  
+
+```{r}
+smoking.data %>%
+  ggplot(aes(x = FTNDDepend, y = Cigarettes_day)) + 
+  geom_boxplot(fill = Pal.2) + 
+  geom_jitter(width = 0.05) + 
+  ylab("Cigarettes per day") + 
+  xlab("Smoking group") + 
+  scale_y_continuous(breaks = c(0,5,10,15,20,25)) + 
+  theme_classic(base_size = text.size) + 
+  expand_limits(y = c(0, 25))
+
+smoking.data %>%
+  ggplot(aes(x = FTNDDepend, y = CO_ppm)) + 
+  geom_boxplot(fill = Pal.2) + 
+  geom_jitter(width = 0.05) + 
+  ylab("Exhaled CO (ppm)") + 
+  xlab("Smoking group") + 
+  scale_y_continuous(breaks = c(0,10,20,30,40,50,60)) + 
+  theme_classic(base_size = text.size) + 
+  expand_limits(y = c(0, 60))
+
+smoking.data %>% 
+  ggplot(aes(x = FTNDDepend, y = FTND)) + 
+  geom_boxplot(fill = Pal.2) + 
+  geom_jitter(width = 0.05) + 
+  ylab("FTND score") + 
+  xlab("Smoking group") + 
+  scale_y_continuous(breaks = c(0:7)) + 
+  theme_classic(base_size = text.size) + 
+  expand_limits(y = c(0, 7))
+```
+
+
+### Attentional Bias
+
+The first piece of information to present for attentional bias is the descriptive statistics for each condition broken down by smoking group. For each smoking group, the mean (and SD) reaction time (RT) to neutral stimuli, smoking stimuli, and the subsequent attentional bias score is presented for each SOA condition. 
+
+```{r, echo=FALSE}
+AB.data <- data %>% 
+  select(N_200:S_2000, AB_200:AB_2000, FTNDDepend) %>% 
+  gather(Variable, RT, -FTNDDepend) %>%
+  group_by(FTNDDepend, Variable) %>% 
+  summarise("Mean RT" = mean(RT),
+            "SD RT" = sd(RT),
+            N = n()) %>% 
+  ungroup() %>% 
+  separate(col = Variable, into = c("Attentional bias condition", "SOA condition")) #Seperate the two conditions into separate columns
+
+AB.data$`Attentional bias condition` <- plyr::revalue(AB.data$`Attentional bias condition`, #Rename variables to make them more informative
+                                      c("AB" = "AB score", 
+                                        "N" = "Neutral images", 
+                                        "S" = "Smoking images"))
+
+kable(AB.data, digits = 2,
+      col.names = c("Smoking group", "Attentional bias condition", "SOA condition (ms)", "Mean RT (ms)", "SD", "N"),
+      caption = "Table 3: Mean RT condition broken down by smoking group and SOA. Abbreviations: SOA; Stimulus Onset Asynchrony, SD; standard deviation, ms; milliseconds, N; group size.")
+```
+
+We can also compare each group on their attentional bias score for each SOA condition. Boxplots are presented to show the distribution of attentional bias scores. On each plot, there is a horizontal dashed line on zero to indicate what no attentional bias would look like. Zero would indicate there is no RT difference between smoking and neutral images, positive values indicate attentional bias towards smoking images, and negative values indicate attentional bias towards neutral images. 
+
+```{r}
+#input the data set
+ggplot(data, aes(FTNDDepend, AB_200)) +
+geom_boxplot(fill = Pal.3) +
+geom_jitter(width = 0.05) + #perfect amount of jitter on the points             
+theme_classic(base_size = text.size) +
+xlab("Smoking Group") +
+ylab("Attentional Bias Score (200ms)") + 
+ylim(-100,100) + 
+geom_hline(yintercept = 0, linetype = 2) #add line showing what no AB would look like 
+```
+
+```{r, echo=FALSE}
+#input the data set
+ggplot(data, aes(FTNDDepend, AB_500)) +  #base layer to start off the plot with the data set, the x variable, and the y variable  
+geom_boxplot(fill = Pal.3) + #add a layer for the boxplot with the change of colour. Using the Brewer palette to keep it nice and consistent  
+geom_jitter(width = 0.05) + #add a layer to include the points             
+theme_classic(base_size = text.size) + #change the theme to remove the gray and gridlines 
+xlab("Smoking Group") +
+ylab("Attentional Bias Score (500ms)") + 
+ylim(-100,100) + 
+geom_hline(yintercept = 0, linetype = 2)
+```
+
+```{r, echo=FALSE, warning=FALSE}
+#input the data set
+ggplot(data, aes(FTNDDepend, AB_2000)) +  #base layer to start off the plot with the data set, the x variable, and the y variable  
+geom_boxplot(fill = Pal.3) + #add a layer for the boxplot with the change of colour. Using the Brewer palette to keep it nice and consistent  
+geom_jitter(width = 0.05) + #add a layer to include the points             
+theme_classic(base_size = text.size) + #change the theme to remove the gray and gridlines 
+xlab("Smoking Group") +
+ylab("Attentional Bias Score (2000ms)") + 
+ylim(-100,100) + 
+geom_hline(yintercept = 0, linetype = 2)
+```
+
+After taking a look at the descriptive statistics and visualising the differences, we can look at the ANOVA results. It is a 3 x 3 mixed design ANOVA, with one between-subject factor of smoking group and one within-subject factor of SOA. The dependent variable was attentional bias score. 
+
+```{r, warning=FALSE}
+#prepare data for ANOVA
+AB.analysis <- data %>% 
+  select(FTNDDepend, P_N, AB_200:AB_2000) %>%
+  gather(SOA, RT, -FTNDDepend, -P_N)
+
+AB.anova <- ezANOVA(
+  data = AB.analysis,
+  wid = P_N, 
+  within = SOA,
+  between = FTNDDepend,
+  dv = RT,
+  type = 3 #type 3 for an unbalanced design. 
+)
+kable(AB.anova$ANOVA, digits = 3,
+      caption = "Table 4: ANOVA results for main and interaction effects. Abbreviations: ges; generalised eta-squared.")
+```
+
+This is the standard ANOVA output and shows quite clearly that there was nothing going on with all the effects having F values below 1. In hindsight, this should not have been a surprise as it would take some pretty hefty (and overinflated) effects to have any change of being detected. It is also important to note that the assumption of sphericity was violated. Therefore, we need to print the sphericity corrected results for the effects containing the within-subject factor.  
+
+```{r}
+kable(AB.anova$`Sphericity Corrections`, digits = 3,
+      caption = "Table 5: Sphericity corrected ANOVA results for within-subject effects")
+```
+
+The final element of the results to present is purely for anyone wanting to do a power analysis using these results. Following the recommendation of [Guo et al. (2013)](https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/1471-2288-13-100) it is important to report the correlation between dependent variables for a within-subject design. Therefore, here is a correlation matrix for the three different attentional bias scores. 
+
+```{r}
+corr.data <- data %>% 
+  select(AB_200:AB_2000)
+
+corr.matrix <- cor(x = corr.data,
+    method = "pearson")
+
+kable(corr.matrix,
+      digits = 3,
+      caption = "Table 6: Correlation matrix for dependent variables.")
+```
+
+
+### Smoking motives 
+
+In addition to dependent and non-dependent smokers showing differences in smoking habits, they also tend to report different motives behind their smoking behaviour. The following results show the mean scores for each subscale of the Wisconsin Inventory for Smoking Dependence Motives (WISDM) for each smoking group. The subscales are presented in two different tables referring to primary and secondary dependence motives. Primary motives refer to the physical indicators of dependence such as craving cigarettes and tolerance. Secondary motives refer to motivational factors associated with smoking such as smoking for positive reinforcement or weight control. 
+
+```{r, echo=FALSE}
+#Prepare long data for plotting for primary dependence motives 
+wisdm.p <- wisdm.data %>% 
+  select(P_N, FTNDDepend, W_auto, W_losscontrol, W_craving, W_tolerance) %>% 
+  gather(Factor, Value, -P_N, -FTNDDepend) %>% 
+  group_by(FTNDDepend, Factor) %>% 
+  summarise(Mean_score = mean(Value),
+            SD_score = sd(Value),
+            N = n(),
+            CI_lower = Mean_score - (1.96 * SD_score/sqrt(N)),
+            CI_upper = Mean_score + (1.96 * SD_score/sqrt(N)))
+#Change the subscale names to be more informative.
+wisdm.p$Factor <- plyr::revalue(wisdm.p$Factor,
+                                      c("W_auto" = "Automaticity", 
+                                        "W_craving" = "Craving", 
+                                        "W_losscontrol" = "Loss of control",
+                                        "W_tolerance" = "Tolerance"))
+
+kable(wisdm.p, digits = 2,
+      col.names = c("Smoking group", "WISDM subscale", "Mean", "SD", "N",  "Lower CI", "Upper CI"),
+      caption = "Table 7: WISDM Primary Dependence Subscales. Abbreviations: CI; 95% confidence interval.")
+```
+
+```{r, echo=FALSE}
+#Prepare long data for plotting secondary dependence motives 
+wisdm.s <- wisdm.data %>% 
+  select(-W_auto, -W_losscontrol, -W_craving, -W_tolerance) %>% 
+  gather(Factor, Value, -P_N, -FTNDDepend) %>% 
+  group_by(FTNDDepend, Factor) %>% 
+  summarise(Mean_score = mean(Value),
+            SD_score = sd(Value),
+            N = n(),
+            CI_lower = Mean_score - (1.96 * SD_score/sqrt(N)),
+            CI_upper = Mean_score + (1.96 * SD_score/sqrt(N)))
+#Change the subscale names to be more informative.
+wisdm.s$Factor <- plyr::revalue(wisdm.s$Factor, 
+                                      c("W_afat" = "Affiliative attachment",
+                                        "W_behchoice" = "Behavioural choice", 
+                                        "W_cogenhance" = "Cognitive enhancement",
+                                        "W_cueexpos" = "Cue exposure",
+                                        "W_negreinforce" = "Negative reinforcement",
+                                        "W_posreinforce" = "Positive reinforcement",
+                                        "W_sensorypro" = "Sensory processes",
+                                        "W_socialgoads" = "Social goads",
+                                        "W_weightcon" = "Weight control"))
+
+kable(wisdm.s, digits = 2,
+      col.names = c("Smoking group", "WISDM subscale", "Mean", "SD", "N", "Lower CI", "Upper CI"),
+      caption = "Table 8: WISDM Secondary Dependence Subscales")
+```
+
+These results can also be plotted with 95% confidence intervals to better visualise the similarities and differences between light and heavy smokers on primary and secondary dependence motives. 
+
+```{r}
+primary <- wisdm.p %>% 
+  ggplot(aes(x = Factor, y = Mean_score, group = FTNDDepend, colour = FTNDDepend)) +
+  geom_line() + geom_point() + 
+  geom_errorbar(aes(ymin = CI_lower, ymax = CI_upper), width = 0.1) +
+  scale_color_manual(values = Pal.2) +
+  expand_limits(y = c(0, 7)) + 
+  scale_y_continuous(breaks = c(0:7)) + 
+  theme_classic(base_size = text.size) +
+  xlab("WISDM subscale") + 
+  ylab("Mean score")
+primary
+
+secondary <- wisdm.s %>% 
+  ggplot(aes(x = Factor, y = Mean_score, group = FTNDDepend, colour = FTNDDepend)) +
+  geom_line() + 
+  geom_point() + 
+  geom_errorbar(aes(ymin = CI_lower, ymax = CI_upper), width = 0.1) +
+  scale_color_manual(values = Pal.2) +
+  expand_limits(y = c(0, 7)) + 
+  scale_y_continuous(breaks = c(0:7)) + 
+  theme_classic(base_size = 12) + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) + #Need to rotate the x axis labels due to their length
+  xlab("WISDM subscale") + 
+  ylab("Mean score")
+secondary
+```
+
+### Conclusion 
+
+Looking back at this project, it is no surprise that it is uninformative, the sample size was just too small. Hopefully this information will be useful if you are performing a meta-analysis in the area or looking for studies to inform a power analysis. I have tried to include all the information you would need, if I have missed anything or if you have any suggestions on how the presentation could be improved, please let me know. I unfortunately cannot include the data as it was never included in the consent form that it would be posted publically. However, I have posted the .Rmd file on [GitHub](https://github.com/BartlettJE/BartlettJE.github.io/tree/master/RMarkdown-scripts) for if you wanted to take a closer look at the code I have used. 

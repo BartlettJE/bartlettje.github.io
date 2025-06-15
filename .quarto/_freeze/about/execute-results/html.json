@@ -1,0 +1,15 @@
+{
+  "hash": "32ffc6eeabc51651fca9817b48cc4d94",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"About\"\nimage: images/headshot.jpg\nabout:\n  template: jolla\n  links:\n    - icon: images/icons/bluesky.svg\n      text: BlueSky\n      href: https://bsky.app/profile/bartlettje.bsky.social\n    - icon: github\n      text: Github\n      href: https://github.com/BartlettJE\n---\n\n\n\n\nAbout this site\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

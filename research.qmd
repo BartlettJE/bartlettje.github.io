@@ -1,0 +1,65 @@
+---
+title: "Research"
+---
+
+## Pre-prints
+
+### 2025
+
+- **Bartlett, J. E.**, Mahrholz, G., & Nordmann, E. (2025, April 21). Practice what you preach: Designing student assignments that advance open and reproducible science. Pre-print available on [PsyArXiv](https://doi.org/10.31219/osf.io/jb72d_v1){target="_blank"}.
+
+- **Bartlett, J. E.** (2025, April 2). Using Open Data to Create Applied Statistics Assessments on Reproducibility and Replicability. Pre-print and supporting materials available on [PsyArXiv](https://osf.io/preprints/osf/nce4y_v2){target="_blank"}.
+
+### 2021
+
+- Palmer, C. & **Bartlett, J. E.** (2021, June 6). Does religiosity inhibit the proclivity to self-forgive?. Pre-print, data, and code available on [PsyArXiv](https://psyarxiv.com/eca5j){target="_blank"}.
+
+## Publications
+
+### 2025
+
+- Evans, T., **Bartlett, J. E.**, Gourdon-Kanhukamwe, A... & Burns, C. (2025). The individual and situational factors predicting unethical behaviour in the workplace: a direct and conceptual replication of Jones & Kavanagh (1996). *[Comprehensive Results in Social Psychology]()*. In Press. Author accepted manuscript available via [University of Greenwich](https://gala.gre.ac.uk/id/eprint/50354/#:~:text=Across%20two%20seminal%20vignette%20experiments,:%20osf.io/d3arx){target="_blank"}.
+
+- Stevenson, J. L., Mavromati, K., **Bartlett, J. E.**, Morrow, L., Moxey, L., & Dawydiak, E. J. (2025). Exploring content vs writer focus in written student feedback: Perceived impact on student emotional response, attention, and usefulness. *[Open Scholarship of Teaching and Learning](https://osotl.org/index.php/osotl/article/view/130), 4*(1). Available open access via the journal. Data and code available on the [OSF](https://osf.io/v8gdx/){target="_blank"}.
+
+### 2024
+
+- Thibault, R.T., Bailey-Rodriguez, D., **Bartlett, J.E.**, Blazey, P., Green, R.J., Pownall, M. & Munafó, M.R. (2024). A Delphi Study to Strengthen Research-Methods Training in Undergraduate Psychology Programs. *[Advances in Methods and Practices in Psychological Science](https://doi.org/10.1177/25152459231213808){target="_blank"}, 7*(1). 10.1177/25152459231213808. Available open access via the journal. 
+
+
+### 2023
+
+- Pownall, M., Azevedo, F., König, L. M., Slack, H. R., Evans, T. R., Flack, Z., Grinschgl, S., Elsherif, M. M., ... **Bartlett, J.E.,** ... & FORRT. (2023). Teaching open and reproducible scholarship: A critical review of the evidence base for current pedagogical methods and their outcomes. [*Royal Society Open Science*](https://doi.org/10.1098/rsos.221255){target="_blank"}, 10(5), 221255. https://doi.org/10.1098/rsos.221255. Available open access via the journal. 
+
+### 2022
+
+- **Bartlett, J. E.** & Charles, S. J. (2022). Power to the People: A Beginner’s Tutorial to Power Analysis using jamovi. [*Meta Psychology*](https://open.lnu.se/index.php/metapsychology/article/view/3078){target="_blank"}, 6, 1-20. Available open access via the journal.
+
+- **Bartlett, J. E.**, Jenks, R., & Wilson, N. (2022). No Meaningful Difference in Attentional Bias Between Daily and Non-Daily Smokers. *[Journal of Trial and Error](https://journal.trialanderror.org/pub/attentionalsmoker/release/2){target="_blank"}*. Pre-print, data, and code available on the [OSF](https://osf.io/am9hd/){target="_blank"}.
+
+- Parsons, S., Azevedo, F., Elsherif, M.M. et al. (2022). A community-sourced glossary of open scholarship terms. *[Nature Human Behaviour](https://www.nature.com/articles/s41562-021-01269-4){target="_blank"}*. https://doi.org/10.1038/s41562-021-01269-4.
+
+- PsyTeachR Team. (2022). Open-source tutorials benefit the field. *[Nature Reviews Psychology](https://doi.org/10.1038/s44159-022-00058-8){target="_blank"}*, 1–2. 10.1038/s44159-022-00058-8
+
+### 2021
+
+- Pennington, C. R., Jones, A., **Bartlett, J.E.**, Copeland, A., & Shaw, D. J. (2021). Raising the bar: Improving methodological rigour in cognitive alcohol research. *[Addiction](https://onlinelibrary.wiley.com/doi/10.1111/add.15563){target="_blank"}*.
+
+### 2020
+
+- Bhogal, M.S. & **Bartlett, J. E.** (2020). Further support for the role of heroism in human mate choice. Accepted author version, data, and code available on [PsyArXiv](https://doi.org/10.31234/osf.io/2npfm){target="_blank"}
+
+### 2019
+
+- **Bartlett, J.E.** and Eaves, J. (2019) 'Getting to Grips with Open Science'. In *A Guide for Psychology Postgraduates: Surviving Postgraduate Study*. ed by Walton, H., Aquino, R., Talbot, C.V, and Melia, C. British Psychological Society, 85-91. The guide is available on the [PsyPAG website](http://www.psypag.co.uk/psypag-guide/){target="_blank"}.  
+- Charles, S. J., **Bartlett, J. E.**, Messick, K. J., Coleman, T. J., III, & Uzdavines, A. (2019). Researcher Degrees of Freedom in the Psychology of Religion. *[The International Journal for the Psychology of Religion](https://www.tandfonline.com/doi/abs/10.1080/10508619.2019.1660573?journalCode=hjpr20).* Accepted author version, data, and code freely available via [PsyArXiv](https://doi.org/10.31234/osf.io/tx5gd){target="_blank"}.
+
+- Coleman, T. J., III, **Bartlett, J. E.**, Holcombe, J., Swanson, S. B., Atkinson, A. R., Silver, C., & Hood, R. (2019, June 4). Absorption, Mentalizing, and Mysticism: Sensing the Presence of the Divine. *[Journal for the Cognitive Science of Religion](https://journals.equinoxpub.com/JCSR/article/view/37551?fbclid=IwAR3iO0_dnZ-yV17R_0l3DHRoZBRoVOw3oIBcJtH0C71Ux17RvFahVee6Qoo){target="_blank"}*. Accepted author version, data, and code available on [PsyArXiv](https://doi.org/10.31234/osf.io/k5fp8){target="_blank"}.
+
+- Margana, L., Bhogal, M.S., **Bartlett, J.E.**, and Farrelly, D. (2019). The Roles of Altruism, Heroism, and Physical Attractiveness in Female Mate Choice. *[Personality and Individual Differences](https://www.sciencedirect.com/science/article/pii/S0191886918304586?via%3Dihub).* Accepted author version freely available at [PsyArXiv](https://psyarxiv.com/kgpvy/){target="_blank"}. Data and materials available on the [OSF](https://osf.io/a76p8/){target="_blank"}.
+
+### 2018
+
+- Farias, M., Coleman III, T.J., **Bartlett, J.E.**, Oviedo, L., Soares, P., Santos, T. and Cerdá, M. (2018) Atheists on the Santiago Way: Examining Motivations to go on Pilgrimage. *[Sociology of Religion](https://academic.oup.com/socrel/advance-article-abstract/doi/10.1093/socrel/sry019/5036084){target="_blank"}.* Accepted author version freely available at [PsyArXiv](https://psyarxiv.com/a7gxn/){target="_blank"}.
+
+- Bhogal, M.S., **Bartlett, J.E.**, and Farrelly, D. (2018). The Influence of Mate Choice Motivation on Non-Financial Altruism. *[Current Psychology](https://link.springer.com/article/10.1007/s12144-018-0070-x){target="_blank"}*. Accepted author version freely available at [PsyArXiv](https://psyarxiv.com/gc8en/){target="_blank"}. Data and materials available on the [OSF](https://osf.io/cfzyb/){target="_blank"}.

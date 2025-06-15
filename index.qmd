@@ -1,0 +1,63 @@
+---
+title: "About"
+image: images/headshot.jpg
+about:
+  template: solana
+  links:
+    - icon: email
+      text: Email
+      href: james.bartlett@glasgow.ac.uk
+    - icon: images/icons/bluesky.svg
+      text: BlueSky
+      href: https://bsky.app/profile/bartlettje.bsky.social
+    - icon: github
+      text: Github
+      href: https://github.com/BartlettJE
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/james-bartlett-86b06b121/
+    - icon: youtube
+      text: YouTube
+      href: https://www.youtube.com/@jamesbartlett5474
+    - icon: google
+      text: Scholar
+      href: https://scholar.google.com/citations?user=i63C4yUAAAAJ&hl=en
+---
+
+I’m Dr James Bartlett, a lecturer in psychology on the learning, teaching, and scholarship track at the University of Glasgow, UK. I specialise in teaching research methods, statistics, and data skills using R/RStudio to psychology students. For my administration roles, I am the deputy lead for third-year on our BSc Psychology programme.  
+
+For my scholarship, I spend most of my time developing open educational resources on research methods and statistics for students and researchers. On my open educational resources page, you will find materials such as data skills workbooks, a guide on power analysis, and creating books and websites for researchers. My research focuses on pedagogy for teaching and assessment in Higher Education, in addition to replication studies, open science, and other projects that catch my eye. 
+
+## CV
+
+You can download a detailed CV on [this page](files/cv-james-bartlett.pdf){target="_blank"}. In a previous role, I also delivered a journey lecture which acts as a kind of CV of failure. The slides outline elements of privilege and luck which were important for where I am today. You can access the [PDF slides on this page](files/journey_lecture.pdf){target="_blank"} if you are interested.
+
+### Education
+
+**PhD in Psychology and Behavioural Sciences**
+Coventry University, UK, 2015 - 2020
+
+Light and Heavy Smokers: A Profile of Drive and Cognitive Control Mechanisms. Available from [Thesis Commons](https://osf.io/preprints/thesiscommons/h9gpe_v1){target="_blank"}.
+
+**BSc in Psychology**
+Coventry University, UK, 2012 - 2015
+
+The Differences in Smoking Habits, Motives, and Attentional Bias in Nicotine Dependent and Non-Dependent Smokers. Available from [Thesis Commons](https://osf.io/preprints/thesiscommons/ahqvm_v1){target="_blank"}.
+
+### Teaching positions
+
+Lecturer in Psychology, University of Glasgow, UK, 2021 - Present.
+
+Senior Lecturer in Psychology, Arden University, UK, April 2021 - September 2021.
+
+Lecturer in Psychology, Arden University, UK, January 2018 - April 2021.
+
+Psychology Experimental Officer (technician), Arden University, UK, September 2018 - September 2019.
+
+### Reviewing / Editorial Services
+
+I am on the editorial advisory board for the [Journal of Open Psychology Data](https://openpsychologydata.metajnl.com/){target="_blank"}.
+
+I have reviewed for the following journals: Collabra: Psychology, Psychological Reports, Journal of Open Psychology Data, Behavior Research Methods, and Psychology of Addictive Behaviors, and several other individual submissions.
+
+I also regularly review submissions to the [Collaborative Replication and Education Project (CREP)](https://www.crep-psych.org/){target="_blank"} for teams of students completing replication projects of psychology studies. 

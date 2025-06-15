@@ -1,0 +1,23 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "James E Bartlett"
+  google-analytics: "G-8E3YC31DY9"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - research.qmd
+      - resources.qmd
+      - talks.qmd
+
+format:
+  html:
+    theme: solar
+    css: styles.css
+    toc: true
+
+editor: visual
+
