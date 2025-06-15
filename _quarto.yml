@@ -5,6 +5,8 @@ project:
 website:
   title: "James E Bartlett"
   google-analytics: "G-8E3YC31DY9"
+  body-footer: |
+    <p style="text-align: center;">James Bartlett (2025) CC BY 4.0.</p>
   navbar:
     left:
       - href: index.qmd

@@ -24,9 +24,9 @@ about:
       href: https://scholar.google.com/citations?user=i63C4yUAAAAJ&hl=en
 ---
 
-I’m Dr James Bartlett, a lecturer in psychology on the learning, teaching, and scholarship track at the University of Glasgow, UK. I specialise in teaching research methods, statistics, and data skills using R/RStudio to psychology students. For my administration roles, I am the deputy lead for third-year on our BSc Psychology programme.  
+I’m Dr James Bartlett, a lecturer in psychology on the learning, teaching, and scholarship track at the University of Glasgow, UK. I specialise in teaching research methods, statistics, and data skills using R/RStudio to psychology students. For my administration roles, I am the deputy lead for third-year on our BSc Psychology programme.
 
-For my scholarship, I spend most of my time developing open educational resources on research methods and statistics for students and researchers. On my open educational resources page, you will find materials such as data skills workbooks, a guide on power analysis, and creating books and websites for researchers. My research focuses on pedagogy for teaching and assessment in Higher Education, in addition to replication studies, open science, and other projects that catch my eye. 
+For my scholarship, I spend most of my time developing open educational resources on research methods and statistics for students and researchers. On my open educational resources page, you will find materials such as data skills workbooks, a guide on power analysis, and creating books and websites for researchers. My research focuses on pedagogy for teaching and assessment in Higher Education, in addition to replication studies, open science, and other projects that catch my eye.
 
 ## CV
 
@@ -34,13 +34,11 @@ You can download a detailed CV on [this page](files/cv-james-bartlett.pdf){targe
 
 ### Education
 
-**PhD in Psychology and Behavioural Sciences**
-Coventry University, UK, 2015 - 2020
+**PhD in Psychology and Behavioural Sciences** Coventry University, UK, 2015 - 2020
 
 Light and Heavy Smokers: A Profile of Drive and Cognitive Control Mechanisms. Available from [Thesis Commons](https://osf.io/preprints/thesiscommons/h9gpe_v1){target="_blank"}.
 
-**BSc in Psychology**
-Coventry University, UK, 2012 - 2015
+**BSc in Psychology** Coventry University, UK, 2012 - 2015
 
 The Differences in Smoking Habits, Motives, and Attentional Bias in Nicotine Dependent and Non-Dependent Smokers. Available from [Thesis Commons](https://osf.io/preprints/thesiscommons/ahqvm_v1){target="_blank"}.
 
@@ -60,4 +58,4 @@ I am on the editorial advisory board for the [Journal of Open Psychology Data](h
 
 I have reviewed for the following journals: Collabra: Psychology, Psychological Reports, Journal of Open Psychology Data, Behavior Research Methods, and Psychology of Addictive Behaviors, and several other individual submissions.
 
-I also regularly review submissions to the [Collaborative Replication and Education Project (CREP)](https://www.crep-psych.org/){target="_blank"} for teams of students completing replication projects of psychology studies. 
+I also regularly review submissions to the [Collaborative Replication and Education Project (CREP)](https://www.crep-psych.org/){target="_blank"} for teams of students completing replication projects of psychology studies.
