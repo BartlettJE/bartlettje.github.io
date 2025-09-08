@@ -6,6 +6,8 @@ title: "Research"
 
 ### 2025
 
+- **Bartlett, J. E.**, Checketts, M., DeBruine, L. M., Mahrholz, G., McAleer, P., & Paterson, H. (2025, September 8). How to teach reproducible research. Pre-print available on [PsyArXiv](osf.io/preprints/psyarxiv/g5ehx_v1){target="_blank"}. This will soon be included in an edited book on "teaching open science". 
+
 -   **Bartlett, J. E.**, Mahrholz, G., & Nordmann, E. (2025, April 21). Practice what you preach: Designing student assignments that advance open and reproducible science. Pre-print available on [PsyArXiv](https://doi.org/10.31219/osf.io/jb72d_v1){target="_blank"}.
 
 -   **Bartlett, J. E.** (2025, April 2). Using Open Data to Create Applied Statistics Assessments on Reproducibility and Replicability. Pre-print and supporting materials available on [PsyArXiv](https://osf.io/preprints/osf/nce4y_v2){target="_blank"}.
@@ -18,7 +20,7 @@ title: "Research"
 
 ### 2025
 
-- Evans, T. R., **Bartlett, J.E.**, Gourdon-Kanhukamwe, A., Allen, T., Antoniou, G., Arent, S., Asmarani, D., Binns, N., Boulton, C., Bowhay, J., Cederlund, L., Chana, R., Chou, Y.Y., Dookheea, K., Guglani, G., Hamson-Ford, A., Hood, H., Hostafci, E.B., Jahanzeb , S., … & Burns, C. (2025). The individual and situational factors predicting unethical behaviour in the workplace: A direct and conceptual replication of Jones & Kavanagh (1996). [*Comprehensive Results in Social Psychology*](https://www.tandfonline.com/doi/full/10.1080/23743603.2025.2507434){target="_blank"}, 0(0), 1–33. https://doi.org/10.1080/23743603.2025.2507434. Available open access via the journal. Data and code available on the [OSF](https://osf.io/dfbqp/){target="_blank"}.
+-   Evans, T. R., **Bartlett, J.E.**, Gourdon-Kanhukamwe, A., Allen, T., Antoniou, G., Arent, S., Asmarani, D., Binns, N., Boulton, C., Bowhay, J., Cederlund, L., Chana, R., Chou, Y.Y., Dookheea, K., Guglani, G., Hamson-Ford, A., Hood, H., Hostafci, E.B., Jahanzeb , S., … & Burns, C. (2025). The individual and situational factors predicting unethical behaviour in the workplace: A direct and conceptual replication of Jones & Kavanagh (1996). [*Comprehensive Results in Social Psychology*](https://www.tandfonline.com/doi/full/10.1080/23743603.2025.2507434){target="_blank"}, 0(0), 1–33. https://doi.org/10.1080/23743603.2025.2507434. Available open access via the journal. Data and code available on the [OSF](https://osf.io/dfbqp/){target="_blank"}.
 
 -   Stevenson, J. L., Mavromati, K., **Bartlett, J. E.**, Morrow, L., Moxey, L., & Dawydiak, E. J. (2025). Exploring content vs writer focus in written student feedback: Perceived impact on student emotional response, attention, and usefulness. [*Open Scholarship of Teaching and Learning*](https://osotl.org/index.php/osotl/article/view/130)*, 4*(1). Available open access via the journal. Data and code available on the [OSF](https://osf.io/v8gdx/){target="_blank"}.
 
