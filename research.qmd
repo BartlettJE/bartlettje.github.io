@@ -10,7 +10,7 @@ title: "Research"
 
 -   **Bartlett, J. E.**, Mahrholz, G., & Nordmann, E. (2025, April 21). Practice what you preach: Designing student assignments that advance open and reproducible science. Pre-print available on [PsyArXiv](https://doi.org/10.31219/osf.io/jb72d_v1){target="_blank"}.
 
--   **Bartlett, J. E.** (2025, April 2). Using Open Data to Create Applied Statistics Assessments on Reproducibility and Replicability. Pre-print and supporting materials available on [PsyArXiv](https://osf.io/preprints/osf/nce4y_v2){target="_blank"}.
+-   **Bartlett, J. E.** (2025, November 7). Embedding Reproducibility and Replicability in a Regression Modelling Assessment. Pre-print and supporting materials available on [PsyArXiv](https://osf.io/preprints/osf/nce4y_v3){target="_blank"}.
 
 ### 2021
 
