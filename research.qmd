@@ -6,9 +6,7 @@ title: "Research"
 
 ### 2025
 
-- **Bartlett, J. E.**, Checketts, M., DeBruine, L. M., Mahrholz, G., McAleer, P., & Paterson, H. (2025, September 8). How to teach reproducible research. Pre-print available on [PsyArXiv](osf.io/preprints/psyarxiv/g5ehx_v1){target="_blank"}. This will soon be included in an edited book on "teaching open science". 
-
--   **Bartlett, J. E.**, Mahrholz, G., & Nordmann, E. (2025, April 21). Practice what you preach: Designing student assignments that advance open and reproducible science. Pre-print available on [PsyArXiv](https://doi.org/10.31219/osf.io/jb72d_v1){target="_blank"}.
+-   **Bartlett, J. E.**, Checketts, M., DeBruine, L. M., Mahrholz, G., McAleer, P., & Paterson, H. (2025, September 8). How to teach reproducible research. Pre-print available on [PsyArXiv](https://osf.io/preprints/psyarxiv/g5ehx_v1){target="_blank"}. This will soon be included in an edited book [*Teaching Open Science*](https://www.e-elgar.com/shop/gbp/teaching-open-science-9781035359059.html?srsltid=AfmBOoritQUorSOahEdCtUVscrHEyZ8-8bckATU-RUssHPtt09EMF5E6){target="_blank"}.
 
 -   **Bartlett, J. E.** (2025, November 7). Embedding Reproducibility and Replicability in a Regression Modelling Assessment. Pre-print and supporting materials available on [PsyArXiv](https://osf.io/preprints/osf/nce4y_v3){target="_blank"}.
 
@@ -17,6 +15,10 @@ title: "Research"
 -   Palmer, C. & **Bartlett, J. E.** (2021, June 6). Does religiosity inhibit the proclivity to self-forgive?. Pre-print, data, and code available on [PsyArXiv](https://psyarxiv.com/eca5j){target="_blank"}.
 
 ## Publications
+
+### 2026
+
+-   **Bartlett, J. E.**, Mahrholz, G., & Nordmann, E. (2026, February 2). Practice what you preach: Designing student assignments that advance open and reproducible science. In press at *Advances in Methods and Practices in Psychological Science*. Pre-print available on [PsyArXiv](https://doi.org/10.31219/osf.io/jb72d_v3){target="_blank"}.
 
 ### 2025
 
